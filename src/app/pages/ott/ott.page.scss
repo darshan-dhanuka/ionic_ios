@@ -1,0 +1,227 @@
+.line-h-3 {
+    line-height: 3;
+}
+.text-size-14{
+    font-size: 14px;
+}
+.bg-red{
+    --background: #d00707;
+}
+div[scrollx=true] {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+       display: none;
+    }
+     .scroll-item {
+       flex: 0 0 auto;
+    }
+  }
+ion-content.ionic-ott-page-section {
+    height: auto;
+    .back-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        // background: url('../../../assets/images/bg.png') center center no-repeat;
+        background-size: cover;
+        // padding-bottom: 50px;
+        .opacity-0{
+            position: relative;
+            z-index: 2;
+                .banner-search{
+                    margin-top: 5px;
+                    width: 100%;
+                    .searchContainer {
+                        width: 100%;
+                        display: inline-flex;
+                        flex: 1 1 300px;
+                        position: relative;
+                        border: 2px solid #FFF;
+                        border-radius: 5px;
+                        overflow: hidden;
+                    }
+                    .searchBox {
+                        color: #FFF;
+                        height: 28px;
+                        padding-left:4px !important;
+                        background: transparent;
+                        flex: 1;
+                        &:focus{
+                            border-color: transparent;;
+                        }
+                    }
+                    .searchButton {
+                        margin: 0 -4px;
+                        height: 28px;
+                        border-left: 2px solid #FFF;
+                        border-top: 2px solid #FFF;
+                        border-bottom: 2px solid #FFF;
+                        --background: transparent !important;
+                        --background-focused:transparent;
+                        --background-activated:transparent;
+                        border: 0;
+                        color: #FFF;
+                        border-radius: 0;
+                        ion-icon{
+                            padding: 0;
+                            color:#FFF;
+                        }
+                    }
+                    .my-list{
+                        font-size: 14px;
+                        color: #FFF;
+                        ion-icon{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            .ott-section{
+                .navigation{
+                    z-index: 999999 !important;
+                    position: absolute;
+                    width: 100%;
+                    margin-top: 35px;
+                    padding: 0 10px;
+                    .navigation_prev{
+                        font-size: 35px;
+                        color: #FFF;
+                        
+                    }
+                    .navigation_next{
+                        font-size: 35px;
+                        color: #FFF;
+                        
+                    }
+                }
+                .ion-video-slide{
+                    padding: 0 20px;
+                    ion-slide{
+                        .card{
+                            border-radius: 10px;
+                            border-color: grey;
+                            .card-body{
+                                padding: 0;
+                                .play{
+                                    position: absolute;
+                                        top: 25%;
+                                        left: 45%;
+                                        border: 3px solid #000;
+                                        border-radius: 50%;
+                                        padding: 5px;   
+                                    }
+                                a img{
+                                    width: 100%;
+                                    height: 110px;
+                                    border-top-left-radius: 10px;
+                                    border-top-right-radius: 10px;
+                                }
+                            }
+                            .card-footer{
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                background: #292828;
+                                .es{
+                                    float: left;
+                                    color: #52ff6f;
+                                }
+                                .time{
+                                    float: right;
+                                    color: #FFF;
+                                }
+                                .title{
+                                    width: 100%;
+                                    float: left;
+                                    color: #FFF;
+                                    text-align: left;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .event-title{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+                .event-row{
+                    background: #1e1f3852;
+                    padding: 0 5px;
+                    margin: -10px 15px;
+                    img{
+                        height: 100px;
+                        border: 1px solid #52ff6f;
+                    }
+                    .play-btn{
+                        height: auto;
+                        border: none;
+                        border-radius:4px;
+                        position: absolute;
+                        top: 45px;
+                        left: 42px;
+                    }
+                    ion-col{
+                        font-size: 12px;
+                        color: #FFF;
+                    }
+                }
+            }
+            .ott-section{
+                .ott-video-episodes{
+                    .image-box {
+                    width: 100%;
+                    }
+
+                    .image-box__background,
+                    .image-box__overlay {
+                        height: 180px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    .image-box__background {
+                        background: var(--image-url) center center no-repeat;
+                        background-size: cover;
+                        z-index: 1;
+                        height: 180px;
+                    }
+                    .image-box__overlay {
+                        background: rgba(0, 0, 0, 0.5);
+                        z-index: 2;
+                    }
+
+                    .image-box__content {
+                        position: relative;
+                        z-index: 3;
+                        color: white;
+                        min-height: 160px;
+                        ion-row{
+                            padding: 0 10px;
+                        }
+                    }
+                }                
+            }
+        }
+    }      
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        padding: 100px 0;
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.carousel-indicators li {
+  width: 40px;
+  height: 5px;
+  margin: 0 2px;
+  border-radius: 0;
+  background: #FFF;
+}

@@ -1,0 +1,22 @@
+.top-header{
+    border-top:3px solid #52ff6f;
+    border-radius:0 0 50% 50% ;
+    background:#292828;
+    min-height:65px;
+    .title{
+        color:#FFF !important;
+        font-size: 20px;
+        line-height: 70px;
+    }
+}
+.input-otp{
+    margin: 8px 0 0 0;
+    border: 1px solid #00000038;
+    box-shadow: lightblue;
+    padding: 2px !important;
+}
+.resend-otp{
+    text-align: center;
+    font-size: 14px;
+    color: #000 !important;
+}

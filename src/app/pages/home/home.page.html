@@ -1,0 +1,42 @@
+<ion-content class="ionic-home-page-section ion-content-back">
+  <div class="back-img">
+    <app-header></app-header>
+    <div class="opacity-0">
+      <!-- <ion-grid no-padding>
+        <ion-row>
+          <img src="../../assets/images/home/banner.png" height="150px">
+        </ion-row>
+      </ion-grid>-->
+      <ion-grid no-padding>
+        <ion-row class="button button-assertive button-clear slider">
+          <ion-slides [options]="slideOptsOne" pager="true">
+            <ion-slide>
+              <img src="../../assets/images/home/new-slider1.png" alt="slider" width="100%" height="auto">
+              <button block (click)=" OpenUrl();" class="slider-bt">Qualify Now</button>
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/images/home/new-slider2.png" alt="slider" width="100%" height="auto">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/images/home/new-slider3.png" alt="slider" width="100%" height="auto">
+            </ion-slide>
+          </ion-slides>
+        </ion-row>
+      </ion-grid>
+
+      <div class="block">
+        <app-accordion *ngFor="let technology of technologies" [name]="technology.name"
+          [description]="technology.description" [isMenuOpen]="technology.isMenuOpen" [icon]="technology.icon"
+          (change)="captureName($event)">
+        </app-accordion>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<!-- <div class="footer">
+  <marquee>
+    <div class="title">
+      {{newsFooter}}
+    </div>
+  </marquee>
+</div> -->

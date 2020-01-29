@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 28" width="26" height="28">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse" x1="28.984" y1="21" x2="28.984" y2="7">
+			<stop offset="0" stop-color="#adadad"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse" x1="32.984" y1="23" x2="32.984" y2="5">
+			<stop offset="0" stop-color="#adadad"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse" x1="9.207" y1="27.925" x2="9.207" y2="0.075">
+			<stop offset="0" stop-color="#adadad"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3) } 
+	</style>
+	<path id="Shape 206 copy" class="shp0" d="M28,21h1.97v-14h-1.97z"/>
+	
+	<path id="Forma 1" class="shp2" d="M16.54,0.08c-0.4,0 -0.74,0.15 -1.03,0.44l-7.63,7.63h-6c-0.4,0 -0.74,0.15 -1.03,0.44c-0.29,0.29 -0.44,0.63 -0.44,1.03v8.79c0,0.4 0.15,0.74 0.44,1.03c0.29,0.29 0.63,0.44 1.03,0.44h6l7.63,7.63c0.29,0.29 0.63,0.44 1.03,0.44c0.4,0 0.74,-0.15 1.03,-0.44c0.29,-0.29 0.44,-0.63 0.44,-1.03v-24.92c0,-0.4 -0.15,-0.74 -0.43,-1.03c-0.29,-0.29 -0.63,-0.44 -1.03,-0.44z"/>
+</svg>

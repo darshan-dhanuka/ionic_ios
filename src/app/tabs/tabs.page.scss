@@ -1,0 +1,27 @@
+ion-tab-bar{
+    height: 60px;
+    --background:#292828;
+}
+.p-10{
+    padding: 10px;
+}
+.feedback-bt{
+ 
+    position: fixed;
+    bottom: 130px;
+    background: none !important;
+    right: 0;
+    /* color: black; */
+
+    
+    color: black;
+    height: 23px;
+    border-radius: 5px;
+    width: 70px;
+}
+.feedback-img{
+    width: auto;
+}
+button:focus {
+    outline: 0;
+}

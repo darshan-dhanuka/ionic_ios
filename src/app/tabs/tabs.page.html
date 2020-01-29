@@ -1,0 +1,32 @@
+<button [routerLink]="['/home/tabs/feedback']" class="feedback-bt" style="z-index: 999;">
+  <ion-img class="feedback-img" src="../../assets/images/feedback.png"></ion-img>
+</button>
+
+<ion-tabs #myTabs (ionTabsDidChange)="getSelectedTab()">
+  <ion-tab-bar class="p-10" slot="bottom">
+    <ion-tab-button tab="psl">
+      <img class="tab-img" *ngIf="activeTabName != 'psl'" src="../../assets/images/home/psl.png" width="50%">
+      <img class="tab-img" *ngIf="activeTabName === 'psl'" src="../../assets/images/home/psl-green.png" width="50%">
+      <ion-label color="light">PSL</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="learn">
+      <img class="tab-img" *ngIf="activeTabName != 'learn'" src="../../assets/images/home/learn.png" width="50%">
+      <img class="tab-img" *ngIf="activeTabName === 'learn'" src="../../assets/images/home/learn-green.png" width="50%">
+      <ion-label color="light">Learn</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="home">
+      <img class="tab-img" *ngIf="activeTabName === 'home'" src="../../assets/images/home/home-green.png" width="60%">
+      <img class="tab-img" *ngIf="activeTabName != 'home'" src="../../assets/images/home/home.png" width="60%">
+    </ion-tab-button>
+    <ion-tab-button tab="play">
+      <img class="tab-img" *ngIf="activeTabName != 'play'" src="../../assets/images/home/play.png" width="50%">
+      <img class="tab-img" *ngIf="activeTabName === 'play'" src="../../assets/images/home/play-green.png" width="50%">
+      <ion-label color="light">Play</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="watch">
+      <img class="tab-img" *ngIf="activeTabName != 'watch'" src="../../assets/images/home/watch.png" width="50%">
+      <img class="tab-img" *ngIf="activeTabName === 'watch'" src="../../assets/images/home/watch-green.png" width="50%">
+      <ion-label color="light">Watch</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

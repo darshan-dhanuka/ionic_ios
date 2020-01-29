@@ -1,0 +1,194 @@
+<ion-content class="ionic-home-page-section ion-content-back">
+    <div class="back-img">
+      <app-header></app-header>
+      <div class="opacity-0">
+        
+        <ion-grid no-padding>
+         
+        
+            <div class="relative arrow">
+  
+                <ion-row>
+  
+                    <div class="apply-div logo-psl">
+                      <ion-img src="assets/images/psl-logo.png"></ion-img>
+        
+                    </div>
+        
+        
+                  </ion-row>
+              </div>
+  
+     
+        </ion-grid>
+  
+        <div class="block">
+          <ion-grid>
+            <ion-row>
+                <div class="container">
+                    <div class="row">
+                       <div class="col-lg-6 offset-3 wapper-countdown">
+                          <h2>ONLINE QUALIFIERS WILL END IN</h2>
+                          <div class="timer">
+                             <div>
+                                <span class="days" id="day"></span> 
+                                <div class="smalltext">Days</div>
+                             </div>
+                             <div>
+                                <span class="hours" id="hour"></span> 
+                                <div class="smalltext">Hours</div>
+                             </div>
+                             <div>
+                                <span class="minutes" id="minute"></span> 
+                                <div class="smalltext">Minutes</div>
+                             </div>
+                             <div>
+                                <span class="seconds" id="second"></span> 
+                                <div class="smalltext">Seconds</div>
+                             </div>
+                             <p id="time-up"></p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+             
+              <!--<div class="apply-text col-md-8">         
+                How To Apply
+              
+            </div>-->
+  
+            </ion-row>
+           
+  
+            <ion-row>
+  
+              <div class="apply-div" [routerLink]="['/home/tabs/calendar']">
+                <ion-img src="assets/images/psl-home/calender.png"></ion-img>
+  
+              </div>
+  
+  
+            </ion-row>
+            <ion-row>
+  
+              <div class="apply-div" [routerLink]="['/home/tabs/how-to-apply']">
+                <ion-img src="assets/images/psl-home/how-to-apply.png"></ion-img>
+              </div>
+  
+  
+            </ion-row>
+            <ion-row>
+  
+              <div class="apply-div" [routerLink]="['/home/tabs/leaderboard']">
+                <ion-img src="assets/images/psl-home/leader-board.png"></ion-img>
+              </div>
+  
+  
+            </ion-row>
+            <ion-row>
+  
+              <div class="apply-div" [routerLink]="['/home/tabs/teams']">
+                <ion-img src="assets/images/psl-home/teams.png"></ion-img>
+              </div>
+  
+  
+            </ion-row>
+            <ion-row>
+  
+              <div class="apply-div" [routerLink]="['/home/tabs/know-the-league']">
+                <ion-img src="assets/images/psl-home/league.png"></ion-img>
+              </div>
+  
+  
+            </ion-row>
+            <ion-row>
+  
+              <!--div class= "apply-div" routerLink="/partner" routerDirection="root">
+                  <ion-img  src="assets/images/psl-home/partner.png"></ion-img>
+                </div-->
+  
+  
+            </ion-row>
+            <ion-row>
+  
+                <div class="apply-div bt-apply" block (click)='OpenUrl();'>
+                  <ion-img src="assets/images/psl-home/qualifier2.png"></ion-img>
+    
+                </div>
+    
+    
+              </ion-row>
+  
+              <ion-row>
+    
+                  <div class="relative arrow">
+                 
+                    <div class="apply-text">Season 2 Partners</div>
+                  </div>
+      
+                  <!--<div class="apply-text col-md-8">         
+                  How To Apply
+                
+              </div>-->
+      
+                </ion-row>
+      
+      
+      
+      
+                <ion-row>
+                  <ion-col>
+                    <div class="team-div">
+                      <ion-img style="margin-top: 25px;" src="assets/images/sponsors/adda.png"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <div class="team-div">
+                      <ion-img src="assets/images/sponsors/OYO.png"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <div class="team-div">
+                      <ion-img src="assets/images/sponsors/Deltin.png"></ion-img>
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <div class="team-div">
+                      <ion-img src="assets/images/sponsors/JJ.png"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <div class="team-div">
+                      <ion-img src="assets/images/sponsors/DSport.png"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                      <div class="team-div">
+                        <ion-img src="assets/images/sponsors/Mera_Hoardings.png"></ion-img>
+                      </div>
+                    </ion-col>
+      
+                </ion-row>
+                <ion-row>
+                  
+                  <ion-col>
+                    <div class="team-div team-end" >
+                      <ion-img class="end-team" src="assets/images/sponsors/Poker_Stuff.png"></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <div class="team-div team-end">
+                      <ion-img class="end-team" src="assets/images/sponsors/Real_Activ.png"></ion-img>
+                    </div>
+                  </ion-col>
+      
+                </ion-row>
+      
+  
+          </ion-grid>
+        </div>
+      </div>
+    </div>
+  </ion-content>

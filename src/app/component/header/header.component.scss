@@ -1,0 +1,26 @@
+.more{
+    width: 40%;
+}
+.header{
+    background: transparent;
+}
+.top-logo{
+    z-index: 10;
+    display: block;
+    align-items: center;
+    margin: 12px;
+}
+.sidenav-btn{
+    position: absolute;
+    right: 0;
+    z-index: 9;
+} 
+ion-toolbar{
+    --background:transparent;
+}
+ion-header{
+    position: sticky;
+    top: 0;
+    background: #292828d9;
+}
+    

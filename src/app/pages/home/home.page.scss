@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+ion-content.ionic-home-page-section {
+    height: 100vh;
+    .back-img{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        position: relative;
+        .opacity-0{
+            position: relative;
+            z-index: 2;
+        }      
+        &:after {
+            content: "";
+            display: block;
+            position: fixed;
+            padding: 100px 0;
+            width: 100%;
+            height: 100%;
+            top: 10px;
+            left: 0;
+            background-color:rgba(0,0,0, .55);
+        }
+        .block{
+            margin: 40px auto;
+            display: block;
+            height: auto;
+            width: 80%;
+            ion-item{
+                margin: 14px auto;
+                --background:#1b1b1b;
+            }
+
+        }
+    }
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+.carousel-indicators li {
+  width: 40px;
+  height: 5px;
+  margin: 0 2px;
+  border-radius: 0;
+  background: #FFF;
+}
+ion-slide{
+    position: relative;
+ 
+} 
+.slider-bt{
+position:absolute;
+
+bottom: 16%;
+background: none;
+color: #fbd644;
+font-size: 21px;
+font-family: 'Open Sans', sans-serif;
+
+ 
+
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
+
+  <base href="./" />
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+<script>
+  var deadline = new Date("february  5, 2020 23:59:59").getTime();
+  var x = setInterval(function () {
+    var currentTime = new Date().getTime();
+    var t = deadline - currentTime;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    if (document.getElementById("day")) {
+      document.getElementById("day").innerHTML = days;
+    }
+    if (document.getElementById("hour")) {
+      document.getElementById("hour").innerHTML = hours;
+    }
+    if (document.getElementById("minute")) {
+      document.getElementById("minute").innerHTML = minutes;
+    }
+    if (document.getElementById("second")) {
+      document.getElementById("second").innerHTML = seconds;
+    }
+    if (t < 0) {
+      clearInterval(x);
+      if (document.getElementById("time-up")) {
+        document.getElementById("time-up").innerHTML = "TIME UP";
+      }
+      if (document.getElementById("day")) {
+        document.getElementById("day").innerHTML = '0';
+      }
+      if (document.getElementById("hour")) {
+        document.getElementById("hour").innerHTML = '0';
+      }
+      if (document.getElementById("minute")) {
+        document.getElementById("minute").innerHTML = '0';
+      }
+      if (document.getElementById("second")) {
+        document.getElementById("second").innerHTML = '0';
+      }
+    }
+  }, 1000);  
+</script>
+
+<!--pagination-->
+
+</html>

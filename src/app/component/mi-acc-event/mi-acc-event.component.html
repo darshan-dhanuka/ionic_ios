@@ -1,0 +1,25 @@
+<h2 (click)="toggleAccordion(name)">
+  
+  <table style="width:100%"><tr>
+    <td width="35%">
+      {{fromdate}}<br>
+      {{todate}}
+    </td>
+    <td align="left" width="50%" style="padding-left: 10px;">
+      {{ name }}
+    </td>
+    <td width="15%" valign="center">
+      <span class="arrow-icon" *ngIf="isMenuOpen">&#9650;</span>
+      <span class="arrow-icon" *ngIf="!isMenuOpen">&#9660;</span>
+    </td>
+  </tr></table>
+ 
+  
+</h2>
+
+<div [ngClass]="isMenuOpen ? 'active' : 'inactive'" *ngIf="name != 'WATCH'">
+  <ion-row justify-content-center>
+    <p>{{ description }}</p>
+  </ion-row>
+  
+</div>

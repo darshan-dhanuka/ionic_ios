@@ -1,0 +1,38 @@
+<ion-content class="ionic-home-page-section ion-content-back">
+  <div class="back-img">
+    <app-header></app-header>
+  
+<div class="container feedback-wrapper">
+  <div class= "relative arrow"  >
+    <ion-img style="width: 20%;
+    width: 7%;
+    margin: 20px;
+    left:0;" [routerLink]="['/home/tabs/psl']"src="assets/images/apply/arrow.png"></ion-img>
+    <div class="apply-text">Feedback</div>
+  </div>
+  <form [formGroup]="editProfileForm">
+ 
+    
+     
+      <ion-textarea  name="feedback" formControlName="feedback" placeholder="Enter your feedback"></ion-textarea>
+    
+    <div *ngFor="let validation of validationMessages.feedback">
+      <div *ngIf="submitted && fp.feedback.errors" class="invalid-feedback">
+        <div class="error-message text-red " *ngIf="fp.feedback.errors[validation.type]">
+          {{ validation.message }}</div>
+      </div>
+    </div>
+    
+     
+     
+          
+          
+
+       <div class="submit-bt-master">
+        <button class='submit-bt' ion-button type="submit" block (click)="submitFeedback(editProfileForm)">Submit</button>
+      </div>
+  </form>
+</div>
+</div>
+
+</ion-content>
